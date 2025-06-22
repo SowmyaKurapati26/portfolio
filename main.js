@@ -177,3 +177,17 @@ console.log(`
     'color: #6b7280; font-size: 14px;',
     'color: #ec4899; font-size: 14px;'
 );
+
+// Mobile dropdown navigation
+const mobileDropdownBtn = document.querySelector('.mobile-dropdown-btn');
+const mobileDropdownMenu = document.querySelector('.mobile-dropdown-menu');
+if (mobileDropdownBtn && mobileDropdownMenu) {
+    mobileDropdownBtn.addEventListener('click', () => {
+        mobileDropdownMenu.classList.toggle('active');
+    });
+    mobileDropdownMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileDropdownMenu.classList.remove('active');
+        });
+    });
+}
