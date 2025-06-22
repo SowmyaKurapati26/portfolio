@@ -1443,6 +1443,24 @@ main {
     .header-title {
         font-size: 2rem;
     }
+
+    .header-visual {
+        width: 100%;
+        align-items: center;
+    }
+
+    .code-window {
+        width: 100%;
+        max-width: 350px;
+        margin: 1.5rem auto 1rem auto;
+        box-sizing: border-box;
+    }
+
+    .code-content {
+        padding: 1rem;
+        font-size: 0.95rem;
+        word-break: break-word;
+    }
 }
 
 /* Mobile (600px and below) */
@@ -1538,5 +1556,16 @@ main {
 
     .header-title {
         font-size: 1rem;
+    }
+
+    .code-window {
+        max-width: 98vw;
+        min-width: 0;
+        margin: 1rem auto 0.5rem auto;
+    }
+
+    .code-content {
+        padding: 0.5rem;
+        font-size: 0.85rem;
     }
 }
