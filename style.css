@@ -1509,6 +1509,10 @@ main {
     .header-title {
         font-size: 1.3rem;
     }
+
+    .header-visual .code-window {
+        display: none !important;
+    }
 }
 
 /* Small Mobile (480px and below) */
